@@ -1,0 +1,12 @@
+{% extends 'travel_wishlist/base.html' %}
+{% block content %}
+
+<h2>{{ place.name }}</h2>
+
+{% if place.visited %}
+    <p>You have visited {{ place.name }}</p>
+{% else %}
+    <p>You have visited {{ place.name }}</p>
+{% endif %}
+
+{% endblock %}

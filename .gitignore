@@ -1,0 +1,6 @@
+*.pyc
+__pycache__
+deb.sqlite3
+venv/
+env/
+.directory
