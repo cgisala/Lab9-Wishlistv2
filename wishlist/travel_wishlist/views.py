@@ -41,8 +41,7 @@ def places_visited(request):
 @login_required
 def place_was_visited(request, place_pk):
     if request.method == 'POST':
-        pk = request.POST.get('pk')
-        place = get_object_or_404(Place, pk=pk)
+        place = get_object_or_404(Place, pk=place_pk)
         print(place.user, request.user)
         if place.user == request.user:
             place.visited = True
